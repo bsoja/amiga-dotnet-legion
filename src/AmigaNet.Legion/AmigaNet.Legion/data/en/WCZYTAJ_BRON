@@ -1,0 +1,172 @@
+﻿Data "axe","sword","shield","bow","arrows"
+Data "armour","helmet","boots","spear","club"
+Data "hammer","scroll","herb","treasure","catapult"
+Data "stone","food","potion","skin"
+
+'nazwa            s p s e t w g d mag,cena,bob     
+Data "light",5,1,0,0,2,2,4,1,0,100,28
+Data "steel",7,2,0,0,2,6,4,2,0,150,2
+Data "silver",12,3,0,0,2,5,4,5,0,500,2
+Data "long",10,5,0,0,2,9,4,3,0,200,2
+Data "fire",15,5,0,0,2,4,4,9,9,800,20
+Data "Dragon fang",25,8,0,0,2,5,4,9,2,3000,20
+Data "Szczerbiec",50,15,0,0,2,5,4,9,5,10000,20
+'-topory          s p s e t w g d mag cena 
+Data "common",6,2,0,0,1,7,4,0,0,120,3
+Data "storm",9,3,0,0,1,15,4,0,0,190,3
+Data "chromic",12,5,0,0,1,15,4,8,0,350,3
+'10
+Data "golden",25,10,0,0,1,12,4,9,0,1100,3
+'-m�oty            s p s e t  w  g d mag cena  
+Data "stone",7,2,0,0,11,16,4,0,0,150,4
+Data "heavy",10,3,0,0,11,30,4,1,0,300,4
+Data "diamond",25,5,0,0,11,25,4,2,0,1050,4
+Data "goblins",30,5,0,0,11,20,4,5,0,1500,4
+'-tarcze          s p s e t w g d mag cena 
+Data "wooden",0,8,0,0,3,3,4,0,0,50,1
+Data "steel",0,15,0,0,3,8,4,0,0,150,15
+Data "storm",0,19,0,0,3,15,4,0,0,300,15
+Data "gremlin's",0,25,0,0,3,10,4,0,0,900,1
+'-�uki            s p s e t w g d mag cena 
+Data "common",10,0,0,0,4,1,4,0,0,80,5
+'20
+Data "special",15,0,0,0,4,2,4,0,0,190,5
+Data "elf",20,0,0,0,4,1,4,0,0,400,5
+'-he�my
+Data "pointed",0,5,0,0,7,1,1,0,0,100,8
+Data "horned",2,5,0,0,7,2,1,0,0,170,8
+'buty            s p s e t w g d mag cena  
+Data "leather",0,0,6,0,8,1,3,0,0,80,9
+Data "shoed",0,2,8,0,8,1,3,0,0,150,9
+'zbroje            s p s e t w g d mag cena    
+Data "light",0,10,0,0,6,10,2,0,0,200,7
+Data "coat of mail",0,18,0,0,6,12,2,0,0,400,7
+Data "steel",0,13,0,0,6,20,2,0,0,300,7
+Data "heavy",0,22,0,0,6,30,2,0,0,390,18
+'30
+Data "silver",0,28,0,0,6,15,2,0,0,900,18
+'zio�a              s p s e t  w g d mag cena    
+Data "sterydius",0,2,0,2,13,0,1,0,0,300,12
+Data "furialis",2,0,5,2,13,0,1,0,0,500,12
+Data "mole's root",-5,0,0,-40,13,0,1,0,0,5000,12
+Data "castor",0,0,8,-5,13,0,1,0,0,400,12
+Data "spinach",3,0,0,0,13,0,1,0,0,300,12
+Data "bay leaf",0,0,0,30,13,0,1,0,0,200,12
+Data "black grass ",0,0,0,0,13,0,1,0,30,400,12
+'strza�y          s p s e t w g d mag cena   
+Data "common",15,0,0,0,5,0,4,0,0,50,6
+Data "poisoned",20,0,0,0,5,0,4,10,0,100,6
+'40
+Data "magic",25,0,0,0,5,0,4,0,20,200,6
+'czary               s p s e  t w g d mag cena   
+Data "MagicMissile(5)",25,0,0,0,12,0,4,1,5,200,14
+Data "Fireball (8)",45,0,0,0,12,0,4,1,8,350,14
+Data "ChaosBreath(12)",20,0,0,0,12,0,4,1,12,600,14
+Data "Flames (15)",35,0,0,0,12,0,4,2,15,700,14
+Data "Lighting (20)",55,0,0,0,12,0,4,2,20,900,14
+Data "Mind Probe (3)",0,0,0,0,12,0,4,3,3,120,13
+Data "Curing (5)",0,0,0,10,12,0,4,2,5,200,13
+Data "Healing (20)",0,0,0,100,12,0,4,2,20,900,13
+Data "Brightness(40)",10,0,0,0,12,0,4,5,40,500,13
+'50
+Data "Intuition (15)",0,0,0,0,12,0,4,6,15,450,13
+Data "God's Wrath(50)",70,0,0,0,12,0,4,7,50,2500,14
+Data "Slow down (10)",0,0,-20,0,12,0,4,2,10,350,14
+'buty           s p s e t w g d mag cena   
+Data "light",0,0,9,0,8,1,3,0,0,100,9
+Data "fighting",2,5,7,0,8,3,3,0,0,230,9
+'maczuga             s p s e  t w g d mag cena   
+Data "ogre bone",7,2,0,0,10,4,4,0,0,50,11
+Data "wooden",4,1,0,0,10,1,4,0,0,20,11
+Data "prickly",9,2,0,0,10,4,4,0,0,80,11
+Data "ruffianly",11,3,0,0,10,3,4,0,0,100,11
+'katapulty         s p sz e t   w  g d mag cena bb       
+Data "siege",60,20,0,0,15,150,4,0,0,500,32
+'60
+Data "ruining",40,10,0,0,15,120,4,0,0,450,32
+Data "light",30,6,0,0,15,50,4,0,0,600,32
+Data "ogre",90,15,0,0,15,60,4,0,0,1150,32
+'g�azy              s p sz e t   w g d mag cena bb       
+Data "small",10,0,0,0,16,10,4,0,0,2,33
+Data "big",20,0,0,0,16,20,4,0,0,4,33
+Data "medium",15,0,0,0,16,18,4,0,0,4,33
+Data "granite",40,0,0,0,16,20,4,0,0,20,33
+Data "marble",30,0,0,0,16,19,4,0,0,15,33
+'he�my            s p s e t w g d mag cena bb    
+Data "Klingon",2,6,0,0,7,2,1,0,0,600,19
+Data "Magic",2,6,3,0,7,-40,1,0,0,870,8
+'70    
+'mixtury             s p s e  t  w g d mag cena bb     
+Data "ple ple",0,0,0,20,18,1,1,0,0,150,16
+Data "poison",-10,-10,0,-90,18,1,1,0,0,500,16
+Data "sheep tongue",5,2,0,-5,18,1,1,0,0,300,16
+Data "honey",4,0,0,30,18,1,1,0,0,490,16
+Data "halucinum",0,0,0,0,18,1,1,0,50,450,16
+Data "cure",0,0,0,70,18,1,1,0,0,350,16
+'�ywno��              s p s e  t w g d mag cena bb     
+Data "hog meat",0,0,0,0,17,2,4,35,0,20,22
+Data "gargoyl meat",0,0,0,0,17,2,4,85,0,50,22
+Data "wolf meat",0,0,0,0,17,2,4,20,0,40,22
+'kosztowno�ci     s p s e  t w g d mag cena bb     
+Data "gold",0,0,0,0,14,0,4,0,0,2000,21
+'80
+Data "stones",0,0,0,0,14,0,4,0,0,1500,21
+Data "coins",0,0,0,0,14,0,4,0,0,3000,21
+Data "diamonds",0,0,0,0,14,0,4,0,0,5000,21
+'sk�ry            s p s e  t w g d mag cena bb   
+Data "hog",0,5,0,0,19,0,2,0,0,200,24
+Data "gargoyl",0,9,0,0,19,0,2,0,0,1450,24
+Data "wolf",0,8,0,0,19,0,2,0,0,350,24
+   
+Data "miraculous",1,3,20,0,8,2,3,0,0,500,9
+'ubranie          s p s e t w g d mag cena bb      
+'czary2             s p s e t w g d mag cena bb      
+Data "Conversion(60)",0,0,0,0,12,0,4,8,60,2000,14
+Data "Explosion (25)",40,0,0,0,12,0,4,9,25,998,14
+   
+Data "carrion",0,0,0,0,17,2,4,20,0,20,22
+'90
+'zbroje2           s  p s e t w g d mag cena     
+Data "scaled",0,12,0,0,6,7,2,0,0,800,7
+Data "lighting",10,30,0,0,6,12,2,0,0,2300,7
+Data "ogre",0,43,0,0,6,70,2,0,0,1700,18
+Data "Vingren's",12,32,0,0,6,30,2,0,0,2400,18
+'oszczepy             s p s e t w g d mag cena     
+Data "whale",17,1,0,0,9,3,4,0,0,300,10
+Data "long",10,1,0,0,9,4,4,0,0,200,10
+Data "Wolf fang",20,2,0,0,9,5,4,0,0,1100,10
+Data "Tusk",30,3,0,0,9,8,4,0,0,1700,10
+'mixtury 2         s p s e   t  w g d mag cena bb      
+Data "wine",0,0,0,-10,18,1,1,0,10,70,16
+Data "troll milk",0,1,12,-10,18,1,1,0,0,500,16
+'100 
+Data "water",0,0,0,10,18,1,1,0,0,10,16
+Data "motorolum",0,0,18,0,18,1,1,0,0,800,16
+Data "blood",-20,0,-20,-20,18,1,1,0,0,300,16
+Data "umkoum",3,0,0,0,18,1,1,0,0,80,16
+'pterodon
+Data "haunch",0,0,0,0,17,2,4,25,0,20,22
+Data "fur",0,3,0,0,19,0,2,0,0,280,24
+'-�uki            s p s e t w g d mag cena 
+Data "Falcon",38,0,0,0,4,1,4,0,0,1180,5
+'strza�y              s p s e t w g d mag cena   
+Data "Falcon talons",35,0,0,0,5,0,4,0,0,1150,6
+'he�my            s p s e t w g d mag cena bb    
+Data "Sorasil's",8,10,5,0,7,0,1,0,0,1220,19
+'czary3                  s p s e  t w g  d mag cena bb         
+Data "Unsure (12)",20,0,0,0,12,0,4,10,12,200,14
+'110 
+Data "Intimidate(20)",50,0,0,0,12,0,4,10,12,600,14
+'dodatkowy stuff 
+'miecze            s p s e t w g d mag cena    
+Data "Barbarian",8,3,0,0,2,7,4,1,0,120,2
+Data "Hornet",14,1,1,0,2,8,4,1,0,700,2
+Data "Chaos",13,1,-2,0,2,9,4,1,0,650,28
+'topory
+Data "orks",10,7,0,0,1,37,4,0,0,120,3
+Data "silver",14,5,0,0,1,27,4,0,0,620,3
+Data "war",8,3,0,0,1,20,4,0,0,190,3
+'m�oty 
+Data "battle",9,2,0,0,11,26,4,0,0,250,4
+Data "steel",11,5,0,0,11,18,4,0,0,450,4
+Data "granite",13,7,0,0,11,39,4,0,0,730,4

@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.303" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AmigaNet.Amos\AmigaNet.Amos.csproj" />
+    <ProjectReference Include="..\AmigaNet.Legion\AmigaNet.Legion.csproj" />
+    <ProjectReference Include="..\AmigaNet.Types\AmigaNet.Types.csproj" />
+    <ProjectReference Include="..\SharpMod.Core\SharpMod.Core.csproj" />
+  </ItemGroup>
+
+
+	<PropertyGroup>
+		<IsWindows Condition="'$(OS)' == 'Windows_NT'">true</IsWindows>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(MSBuildRuntimeType)' == 'Core'">
+		<IsOSX Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::OSX)))' == 'true'">true</IsOSX>
+		<IsLinux Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Linux)))' == 'true'">true</IsLinux>
+	</PropertyGroup>
+
+	<Target Name="PrintRID" BeforeTargets="Build">
+		<Message Text="IsWindows $(IsWindows)" Importance="high" />
+		<Message Text="IsOSX $(IsOSX)" Importance="high" />
+		<Message Text="IsLinux $(IsLinux)" Importance="high" />
+		<Message Text="Platform $(Platform)" Importance="high" />
+	</Target>
+
+	<Target Name="CopyLibsWindows" Condition="'$(IsWindows)' == 'true'" AfterTargets="AfterBuild">
+		<Copy SourceFiles="libs/windows-x64/SDL2.dll" DestinationFolder="$(OutDir)" />
+		<Copy SourceFiles="libs/windows-x64/soft_oal.dll" DestinationFolder="$(OutDir)" />
+	</Target>
+	<Target Name="CopyLibsOSX" Condition="'$(IsOSX)' == 'true'" AfterTargets="AfterBuild">
+		<Copy SourceFiles="libs/osx/SDL2.dll" DestinationFolder="$(OutDir)" />
+		<Copy SourceFiles="libs/osx/soft_oal.dll" DestinationFolder="$(OutDir)" />
+	</Target>
+	<Target Name="CopyLibsLinux" Condition="'$(IsLinux)' == 'true'" AfterTargets="AfterBuild">
+		<Copy SourceFiles="libs/linux-x64/SDL2.dll" DestinationFolder="$(OutDir)" />
+		<Copy SourceFiles="libs/linux-x64/soft_oal.dll" DestinationFolder="$(OutDir)" />
+	</Target>
+	
+</Project>
