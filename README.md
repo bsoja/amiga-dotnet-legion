@@ -1,3 +1,5 @@
+<img src="images/legion.png" width="300px" />
+
 # Legion .NET
 
 Classic Amiga game - Legion - rewritten in C# language, based on the official AMOS source code provided by authors. 
