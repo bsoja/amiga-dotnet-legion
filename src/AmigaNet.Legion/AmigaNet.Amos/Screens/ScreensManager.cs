@@ -1104,8 +1104,14 @@ namespace AmigaNet.Amos.Screens
         /// </summary>
         public void Colour(int number, byte R, byte G, byte B)
         {
-            //var screen = GetCurrentScreen();
-            //screen.Palette[number] = new Pixel(255, R, G, B);
+            var screen = GetCurrentScreen();
+            if (number >= screen.Palette.Length)
+            {
+                var tempArr = new Pixel[screen.Palette.Length * 2];
+                Array.Copy(screen.Palette, tempArr, screen.Palette.Length);
+                screen.Palette = tempArr;
+            }
+            screen.Palette[number] = new Pixel(R, G, B, number);
         }
 
         /// <summary>

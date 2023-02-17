@@ -330,18 +330,18 @@ namespace AmigaNet.Legion
             {
                 var pixel = screens.Colour(I);
                 screens.Colour(I+16, pixel.R, pixel.G, pixel.B);
-                //Colour I+16,Colour(I);
             }
 
+            //For I=0 To 15 : Colour I,D : Add D,$222 : Next I
             byte r = 0;
             byte g = 0;
             byte b = 0;
             for (var I = 0; I <= 15; I++)
             {
                 screens.Colour(I, r, g, b);
-                r += 20;
-                g += 20;
-                b += 20;
+                r += 34;
+                g += 34;
+                b += 34;
             }
             screens.Screen(2);
             screens.GetPalette(0);
@@ -485,8 +485,8 @@ namespace AmigaNet.Legion
 
         void _INTRO_FADING(String A_S, String B_S, int X1, int Y1, int X2, int Y2)
         {
-            //screens.Colour(28, 238, 238, 238); //not included in original Legion game, added to show text correctly
-            //screens.Ink(28); //not included in original Legion game, added to show text correctly
+            screens.Colour(28, 238, 238, 238); //not included in original Legion game, added to show text correctly
+            screens.Ink(28); //not included in original Legion game, added to show text correctly
             do { } while (!(amos.TIMER % 3 == 1));
             screens.Text(X1, Y1, A_S);
             do { } while (!(amos.TIMER % 3 == 1));
